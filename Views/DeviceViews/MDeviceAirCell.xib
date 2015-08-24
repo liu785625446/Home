@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="292" id="Y2f-cd-uqY" customClass="MDeviceAirCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y2f-cd-uqY" id="L5H-12-tAa">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="siU-UE-ybG">
+                        <rect key="frame" x="0.0" y="1" width="320" height="290"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="airbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="fF4-Ff-2yV">
+                                <rect key="frame" x="19" y="15" width="283" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="35s-cv-AfJ"/>
+                                    <constraint firstAttribute="width" constant="283" id="mHc-fX-MPM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xts-IE-rwZ">
+                                <rect key="frame" x="39" y="131" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Y2r-Gc-fxF"/>
+                                    <constraint firstAttribute="height" constant="60" id="xvA-f4-10v"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="button_air_power.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="airRemoteAction:" destination="Y2f-cd-uqY" eventType="touchDown" id="GgL-Rn-jBF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvg-oo-c2X">
+                                <rect key="frame" x="130" y="131" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="2wU-ui-AWU"/>
+                                    <constraint firstAttribute="height" constant="60" id="FBl-Pw-OcT"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="button_air_model.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="airRemoteAction:" destination="Y2f-cd-uqY" eventType="touchDown" id="6yj-D8-L01"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guf-io-oVf">
+                                <rect key="frame" x="130" y="215" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="AlN-4O-J0B"/>
+                                    <constraint firstAttribute="height" constant="60" id="RPx-eu-vMU"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="button_air_model_wind.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="airRemoteAction:" destination="Y2f-cd-uqY" eventType="touchDown" id="8el-0i-0jA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cmy-sA-qmH">
+                                <rect key="frame" x="222" y="131" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="L1v-eV-9PE"/>
+                                    <constraint firstAttribute="width" constant="60" id="bom-4g-583"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="button_air_temperature_big.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="airRemoteAction:" destination="Y2f-cd-uqY" eventType="touchDown" id="7KX-OV-66f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvZ-dP-9U2">
+                                <rect key="frame" x="222" y="215" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="XzY-c8-u2K"/>
+                                    <constraint firstAttribute="height" constant="60" id="qJc-MF-Fi8"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="button_air_temperature_small.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="airRemoteAction:" destination="Y2f-cd-uqY" eventType="touchDown" id="yUd-jO-p8y"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon_wind_auto.png" translatesAutoresizingMaskIntoConstraints="NO" id="gON-Jw-gLW">
+                                <rect key="frame" x="245" y="44" width="32" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="bKd-5w-Q3l"/>
+                                    <constraint firstAttribute="width" constant="32" id="zed-q2-m3q"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="6.png" translatesAutoresizingMaskIntoConstraints="NO" id="aq4-hh-3Jg">
+                                <rect key="frame" x="152" y="28" width="35" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="DyT-U7-Fsn"/>
+                                    <constraint firstAttribute="height" constant="55" id="tiA-bZ-Xbb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="lqM-eg-iKY">
+                                <rect key="frame" x="116" y="28" width="35" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="6Pw-Bx-cQW"/>
+                                    <constraint firstAttribute="height" constant="55" id="a8t-H3-12H"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="c.png" translatesAutoresizingMaskIntoConstraints="NO" id="rPF-mK-UFD">
+                                <rect key="frame" x="190" y="67" width="15" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="dcJ-RA-Guu"/>
+                                    <constraint firstAttribute="width" constant="15" id="oi2-hV-yKg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon_m_auto.png" translatesAutoresizingMaskIntoConstraints="NO" id="hlW-li-FdF">
+                                <rect key="frame" x="39" y="32" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="BSo-AB-h9z"/>
+                                    <constraint firstAttribute="height" constant="40" id="Qqw-AN-R1S"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Pp-aD-45m">
+                                <rect key="frame" x="39" y="215" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="TFm-ng-SNK"/>
+                                    <constraint firstAttribute="height" constant="60" id="bKd-wN-Vx7"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="button_air_model_sweepwind.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="airRemoteAction:" destination="Y2f-cd-uqY" eventType="touchDown" id="Sjl-i2-lpL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="自动" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUe-d3-Oau">
+                                <rect key="frame" x="31" y="71" width="57" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="J6t-oK-8RQ"/>
+                                    <constraint firstAttribute="height" constant="15" id="qLA-qC-qpM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon_wind.png" translatesAutoresizingMaskIntoConstraints="NO" id="IEH-9b-FTv">
+                                <rect key="frame" x="240" y="30" width="25" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="CXm-Os-ya8"/>
+                                    <constraint firstAttribute="width" constant="25" id="Ka7-BZ-22g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="扫风" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8O1-Ge-fiF">
+                                <rect key="frame" x="267" y="29" width="24" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="OfX-vN-952"/>
+                                    <constraint firstAttribute="height" constant="12" id="Ry1-9F-eoV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="自动风速" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b69-mZ-Zpd">
+                                <rect key="frame" x="240" y="67" width="51" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="psh-Zv-NvQ"/>
+                                    <constraint firstAttribute="width" constant="51" id="wko-dD-oF2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xts-IE-rwZ" firstAttribute="top" secondItem="siU-UE-ybG" secondAttribute="top" constant="130" id="36P-oF-6wC"/>
+                            <constraint firstItem="rPF-mK-UFD" firstAttribute="leading" secondItem="fF4-Ff-2yV" secondAttribute="trailing" constant="-112" id="7o7-sK-Ang"/>
+                            <constraint firstItem="fF4-Ff-2yV" firstAttribute="leading" secondItem="hlW-li-FdF" secondAttribute="trailing" constant="-60" id="94A-hD-xsq"/>
+                            <constraint firstItem="fF4-Ff-2yV" firstAttribute="top" secondItem="gON-Jw-gLW" secondAttribute="bottom" constant="-51" id="ALe-26-IUU"/>
+                            <constraint firstItem="Cmy-sA-qmH" firstAttribute="leading" secondItem="gvg-oo-c2X" secondAttribute="trailing" constant="32" id="C35-Xu-oje"/>
+                            <constraint firstItem="NUe-d3-Oau" firstAttribute="top" secondItem="fF4-Ff-2yV" secondAttribute="bottom" constant="-24" id="CVJ-P0-7hs"/>
+                            <constraint firstItem="guf-io-oVf" firstAttribute="leading" secondItem="5Pp-aD-45m" secondAttribute="trailing" constant="31" id="Fvg-0w-cq1"/>
+                            <constraint firstItem="fF4-Ff-2yV" firstAttribute="top" secondItem="8O1-Ge-fiF" secondAttribute="bottom" constant="-26" id="GzM-DJ-uPK"/>
+                            <constraint firstAttribute="centerX" secondItem="fF4-Ff-2yV" secondAttribute="centerX" id="NoQ-2v-5nP"/>
+                            <constraint firstItem="fF4-Ff-2yV" firstAttribute="top" secondItem="hlW-li-FdF" secondAttribute="bottom" constant="-57" id="PPG-pf-mcw"/>
+                            <constraint firstItem="fF4-Ff-2yV" firstAttribute="leading" secondItem="NUe-d3-Oau" secondAttribute="trailing" constant="-69" id="QJw-Y8-24q"/>
+                            <constraint firstItem="aq4-hh-3Jg" firstAttribute="leading" secondItem="fF4-Ff-2yV" secondAttribute="trailing" constant="-150" id="QUL-Xx-aep"/>
+                            <constraint firstItem="fF4-Ff-2yV" firstAttribute="leading" secondItem="lqM-eg-iKY" secondAttribute="trailing" constant="-132" id="UN2-Y3-iIF"/>
+                            <constraint firstItem="gON-Jw-gLW" firstAttribute="leading" secondItem="fF4-Ff-2yV" secondAttribute="trailing" constant="-57" id="Xyk-pJ-TLv"/>
+                            <constraint firstItem="IEH-9b-FTv" firstAttribute="leading" secondItem="fF4-Ff-2yV" secondAttribute="trailing" constant="-62" id="bZF-iu-lyW"/>
+                            <constraint firstItem="lvZ-dP-9U2" firstAttribute="top" secondItem="siU-UE-ybG" secondAttribute="top" constant="214" id="bZk-ZY-gQr"/>
+                            <constraint firstItem="lvZ-dP-9U2" firstAttribute="leading" secondItem="guf-io-oVf" secondAttribute="trailing" constant="32" id="bun-z7-ZmO"/>
+                            <constraint firstItem="gvg-oo-c2X" firstAttribute="top" secondItem="siU-UE-ybG" secondAttribute="top" constant="130" id="hMq-91-NKr"/>
+                            <constraint firstItem="8O1-Ge-fiF" firstAttribute="leading" secondItem="fF4-Ff-2yV" secondAttribute="trailing" constant="-35" id="hZv-Bm-VWw"/>
+                            <constraint firstItem="fF4-Ff-2yV" firstAttribute="top" secondItem="siU-UE-ybG" secondAttribute="top" constant="14" id="kWN-uc-aEI"/>
+                            <constraint firstItem="Cmy-sA-qmH" firstAttribute="top" secondItem="siU-UE-ybG" secondAttribute="top" constant="130" id="laU-jd-IyY"/>
+                            <constraint firstItem="gvg-oo-c2X" firstAttribute="leading" secondItem="Xts-IE-rwZ" secondAttribute="trailing" constant="31" id="mwN-Do-KXi"/>
+                            <constraint firstItem="5Pp-aD-45m" firstAttribute="top" secondItem="siU-UE-ybG" secondAttribute="top" constant="214" id="oyz-RL-GSz"/>
+                            <constraint firstItem="aq4-hh-3Jg" firstAttribute="top" secondItem="fF4-Ff-2yV" secondAttribute="bottom" constant="-67" id="pud-Kh-4IY"/>
+                            <constraint firstAttribute="centerX" secondItem="guf-io-oVf" secondAttribute="centerX" id="r5u-VP-VV9"/>
+                            <constraint firstItem="b69-mZ-Zpd" firstAttribute="leading" secondItem="fF4-Ff-2yV" secondAttribute="trailing" constant="-62" id="rA2-yb-bRh"/>
+                            <constraint firstAttribute="centerX" secondItem="gvg-oo-c2X" secondAttribute="centerX" id="rmQ-GC-vb5"/>
+                            <constraint firstItem="lqM-eg-iKY" firstAttribute="top" secondItem="fF4-Ff-2yV" secondAttribute="bottom" constant="-67" id="vd9-uN-kur"/>
+                            <constraint firstItem="fF4-Ff-2yV" firstAttribute="top" secondItem="IEH-9b-FTv" secondAttribute="bottom" constant="-27" id="wE7-yB-PIf"/>
+                            <constraint firstItem="guf-io-oVf" firstAttribute="top" secondItem="siU-UE-ybG" secondAttribute="top" constant="214" id="wVd-Jm-BHH"/>
+                            <constraint firstItem="b69-mZ-Zpd" firstAttribute="top" secondItem="fF4-Ff-2yV" secondAttribute="bottom" constant="-28" id="yez-U0-FaR"/>
+                            <constraint firstItem="rPF-mK-UFD" firstAttribute="top" secondItem="fF4-Ff-2yV" secondAttribute="bottom" constant="-28" id="zcB-u4-r6O"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="siU-UE-ybG" secondAttribute="bottom" constant="-1" id="61S-b5-O2g"/>
+                    <constraint firstAttribute="trailing" secondItem="siU-UE-ybG" secondAttribute="trailing" id="86g-7p-0ba"/>
+                    <constraint firstItem="siU-UE-ybG" firstAttribute="leading" secondItem="L5H-12-tAa" secondAttribute="leading" id="H97-Wk-KLa"/>
+                    <constraint firstItem="siU-UE-ybG" firstAttribute="top" secondItem="L5H-12-tAa" secondAttribute="top" id="wVO-Xc-spE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="isWindAuto" destination="b69-mZ-Zpd" id="PYG-hk-86S"/>
+                <outlet property="mailsBut" destination="Xts-IE-rwZ" id="eFT-2O-Hjz"/>
+                <outlet property="modeName" destination="NUe-d3-Oau" id="tMT-24-2WB"/>
+                <outlet property="modelBut" destination="gvg-oo-c2X" id="El0-Q2-gYa"/>
+                <outlet property="modelImg" destination="hlW-li-FdF" id="nFK-tD-xz8"/>
+                <outlet property="sweptBut" destination="5Pp-aD-45m" id="Njx-Rk-GyS"/>
+                <outlet property="sweptImg" destination="IEH-9b-FTv" id="7ro-lK-QoA"/>
+                <outlet property="sweptName" destination="8O1-Ge-fiF" id="j1t-M2-qjc"/>
+                <outlet property="temperatureAddBut" destination="Cmy-sA-qmH" id="gj8-31-pVW"/>
+                <outlet property="temperatureBits" destination="aq4-hh-3Jg" id="FIZ-ag-ggG"/>
+                <outlet property="temperatureCel" destination="rPF-mK-UFD" id="fKV-9Z-zcd"/>
+                <outlet property="temperatureMinusBut" destination="lvZ-dP-9U2" id="RRB-Ct-pPk"/>
+                <outlet property="temperatureTen" destination="lqM-eg-iKY" id="vqa-7A-Lb4"/>
+                <outlet property="windBut" destination="guf-io-oVf" id="9Rk-GB-FeW"/>
+                <outlet property="windRating" destination="gON-Jw-gLW" id="I0u-t1-8tB"/>
+            </connections>
+            <point key="canvasLocation" x="326" y="245"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1.png" width="70" height="109"/>
+        <image name="6.png" width="70" height="109"/>
+        <image name="airbg.png" width="557" height="201"/>
+        <image name="button_air_model.png" width="154" height="154"/>
+        <image name="button_air_model_sweepwind.png" width="154" height="154"/>
+        <image name="button_air_model_wind.png" width="154" height="154"/>
+        <image name="button_air_power.png" width="154" height="154"/>
+        <image name="button_air_temperature_big.png" width="154" height="154"/>
+        <image name="button_air_temperature_small.png" width="154" height="154"/>
+        <image name="c.png" width="31" height="28"/>
+        <image name="icon_m_auto.png" width="90" height="90"/>
+        <image name="icon_wind.png" width="45" height="25"/>
+        <image name="icon_wind_auto.png" width="64" height="45"/>
+    </resources>
+</document>

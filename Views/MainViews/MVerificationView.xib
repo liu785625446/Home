@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="MVerificationView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr.j智能安防" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUa-eM-ZKj">
+                    <rect key="frame" x="56" y="119" width="209" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="209" id="FU9-Nf-NtS"/>
+                        <constraint firstAttribute="height" constant="31" id="M4n-ps-56d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="fUg-CE-aHx">
+                    <rect key="frame" x="27" y="153" width="266" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ccA-SB-CVq"/>
+                        <constraint firstAttribute="width" constant="266" id="x85-R1-PSJ"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7eO-SN-BA0" customClass="CustomTextField">
+                    <rect key="frame" x="36" y="158" width="249" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="249" id="0UP-dS-ndU"/>
+                        <constraint firstAttribute="height" constant="30" id="9ty-Eq-el8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="HM4-bR-6u8">
+                    <rect key="frame" x="125" y="49" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="I1E-br-lSw"/>
+                        <constraint firstAttribute="height" constant="70" id="tau-W4-cPO"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBT-Zf-hhk" customClass="CustomButton">
+                    <rect key="frame" x="27" y="201" width="266" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="266" id="CaX-4K-FQs"/>
+                        <constraint firstAttribute="height" constant="40" id="tGc-sz-EZ5"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="登入">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="DZQ-xL-vIF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AId-FM-21G">
+                    <rect key="frame" x="27" y="248" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="A1M-jQ-hcu"/>
+                        <constraint firstAttribute="height" constant="24" id="BHo-t1-d5D"/>
+                    </constraints>
+                    <state key="normal" image="icon_gx.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="icon_gx_select.png"/>
+                    <state key="highlighted" image="icon_gx_select.png"/>
+                    <connections>
+                        <action selector="autoLoginAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jt1-dZ-jNw"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="自动登录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ta-nV-N1S">
+                    <rect key="frame" x="54" y="252" width="52" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="BUa-eM-ZKj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="119" id="2Za-sa-wJ7"/>
+                <constraint firstItem="HM4-bR-6u8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="49" id="3dA-dv-bwz"/>
+                <constraint firstAttribute="centerX" secondItem="fUg-CE-aHx" secondAttribute="centerX" id="4eo-Ll-htO"/>
+                <constraint firstAttribute="centerX" secondItem="MBT-Zf-hhk" secondAttribute="centerX" id="9z9-l4-C9a"/>
+                <constraint firstAttribute="centerX" secondItem="BUa-eM-ZKj" secondAttribute="centerX" id="DqI-5E-oof"/>
+                <constraint firstItem="MBT-Zf-hhk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="201" id="WW8-Jm-dWC"/>
+                <constraint firstItem="7eO-SN-BA0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="158" id="Ym1-Rc-Dbh"/>
+                <constraint firstAttribute="centerX" secondItem="7eO-SN-BA0" secondAttribute="centerX" id="faW-9w-RSk"/>
+                <constraint firstAttribute="centerX" secondItem="HM4-bR-6u8" secondAttribute="centerX" id="fc8-4N-1PT"/>
+                <constraint firstItem="fUg-CE-aHx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="153" id="g0H-5j-Cgg"/>
+                <constraint firstItem="AId-FM-21G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="27" id="opU-WE-kC7"/>
+                <constraint firstItem="8ta-nV-N1S" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="56" id="toG-ck-kGO"/>
+                <constraint firstItem="8ta-nV-N1S" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="252" id="uE1-4O-8rI"/>
+                <constraint firstItem="AId-FM-21G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="248" id="z52-FI-Qcb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="autoLogin" destination="AId-FM-21G" id="Pgp-wg-2LJ"/>
+                <outlet property="boxId" destination="BUa-eM-ZKj" id="09n-bB-YgZ"/>
+                <outlet property="boxPassword" destination="7eO-SN-BA0" id="ucY-1c-876"/>
+                <outlet property="imageView" destination="HM4-bR-6u8" id="8gO-n8-EYZ"/>
+                <outlet property="loginBut" destination="MBT-Zf-hhk" id="FyD-11-Gka"/>
+            </connections>
+            <point key="canvasLocation" x="207" y="152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="box_bg.png" width="299" height="45"/>
+        <image name="icon.png" width="57" height="57"/>
+        <image name="icon_gx.png" width="24" height="24"/>
+        <image name="icon_gx_select.png" width="48" height="48"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

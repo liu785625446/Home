@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="370" id="ny7-oO-i55" customClass="MDeviceTVCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="370"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ny7-oO-i55" id="y1r-eu-H6R">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2J-uZ-jCS">
+                        <rect key="frame" x="129" y="96" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="TIY-ro-PiJ"/>
+                            <constraint firstAttribute="height" constant="60" id="bau-hF-ffJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_mute.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="qfb-5B-c1n"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ym-8E-fIe">
+                        <rect key="frame" x="129" y="9" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="7En-oa-byh"/>
+                            <constraint firstAttribute="width" constant="60" id="ErB-3O-4sE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_ch_add.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="p0U-R6-UxV"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbr-aL-5OY">
+                        <rect key="frame" x="39" y="96" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Fic-W5-QDp"/>
+                            <constraint firstAttribute="width" constant="60" id="tcV-BZ-Fjv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_voice_small.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="KrW-hZ-q5B"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzi-Eu-FHZ">
+                        <rect key="frame" x="219" y="9" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="4QX-K5-cKR"/>
+                            <constraint firstAttribute="height" constant="60" id="RJa-b8-PXc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_menu.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="41v-qP-KxC"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOK-je-jpE">
+                        <rect key="frame" x="219" y="96" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="YFJ-ZX-PiQ"/>
+                            <constraint firstAttribute="height" constant="60" id="hKN-Ox-2Q1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_voice_big.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="CJr-Uo-WF8"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkA-Kn-YWE">
+                        <rect key="frame" x="129" y="180" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="33O-hh-PSB"/>
+                            <constraint firstAttribute="width" constant="60" id="JJK-lr-CbE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_ch_reduction.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="9mM-dC-lRx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pw-Aw-DCE">
+                        <rect key="frame" x="219" y="180" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="l70-Kn-hxl"/>
+                            <constraint firstAttribute="height" constant="60" id="lvy-V2-FoY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_num.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="cXW-es-863"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sc0-m0-XB1">
+                        <rect key="frame" x="39" y="9" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Cji-wD-35e"/>
+                            <constraint firstAttribute="height" constant="60" id="vd6-fv-kSj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" image="button_air_power.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="ACL-LC-bX6"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7Z-Lm-eRh">
+                        <rect key="frame" x="254" y="259" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="FJ4-1L-bNi"/>
+                            <constraint firstAttribute="width" constant="40" id="fn2-FQ-Mnq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_n5.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="uaY-CD-4MS"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIt-rv-jgB">
+                        <rect key="frame" x="27" y="259" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="a1j-tT-wO6"/>
+                            <constraint firstAttribute="height" constant="40" id="qOK-Sg-nez"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_n1.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="oeT-BV-FJf"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dw-P8-hBI">
+                        <rect key="frame" x="82" y="259" width="42" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ffn-9p-TIK"/>
+                            <constraint firstAttribute="width" constant="42" id="psy-vx-6EF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_n2.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="8ZZ-15-mTp"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Re-Dp-lzv">
+                        <rect key="frame" x="139" y="259" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="1W8-aW-74c"/>
+                            <constraint firstAttribute="height" constant="40" id="bdW-Pd-apR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_n3.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="h06-Mz-A84"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdf-hH-bBc">
+                        <rect key="frame" x="27" y="316" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="1eY-6m-LTD"/>
+                            <constraint firstAttribute="width" constant="40" id="nUS-hP-JmL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_n6.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="ler-NS-iq8"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3A-Aq-OEn">
+                        <rect key="frame" x="81" y="316" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="EpZ-NB-DyO"/>
+                            <constraint firstAttribute="height" constant="40" id="xpg-WY-tP5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_n7.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="6iD-R2-C7W"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjJ-is-3UJ">
+                        <rect key="frame" x="199" y="316" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Bp6-hJ-aha"/>
+                            <constraint firstAttribute="height" constant="40" id="zhm-Bx-nT1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_n9.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="j8j-nM-eKO"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUy-tm-MwP">
+                        <rect key="frame" x="254" y="316" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="0SE-IX-qSs"/>
+                            <constraint firstAttribute="height" constant="40" id="qkD-nH-3nW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_n0.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="AZh-jd-tZI"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSc-QQ-bbC">
+                        <rect key="frame" x="199" y="259" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Fh9-fa-Ewd"/>
+                            <constraint firstAttribute="width" constant="40" id="OTg-ke-USO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_n4.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="JME-rJ-zpL"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUc-ht-Q1c">
+                        <rect key="frame" x="139" y="316" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="eIH-gU-Lmx"/>
+                            <constraint firstAttribute="height" constant="40" id="yQO-FK-Jm8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_n8.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="KjH-0P-6aV"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbT-ub-zyM">
+                        <rect key="frame" x="39" y="180" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="FI4-7P-edD"/>
+                            <constraint firstAttribute="height" constant="60" id="tsV-3v-6Hf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" backgroundImage="button_tv_avtv.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="menuAction:" destination="ny7-oO-i55" eventType="touchDown" id="JT0-jA-c4J"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YjJ-is-3UJ" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="316" id="1i5-tt-8jj"/>
+                    <constraint firstItem="pSc-QQ-bbC" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="259" id="4HZ-IH-pho"/>
+                    <constraint firstItem="eIt-rv-jgB" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="259" id="74R-8k-540"/>
+                    <constraint firstItem="sUy-tm-MwP" firstAttribute="leading" secondItem="YjJ-is-3UJ" secondAttribute="trailing" constant="15" id="81Y-X6-eiE"/>
+                    <constraint firstItem="0dw-P8-hBI" firstAttribute="leading" secondItem="eIt-rv-jgB" secondAttribute="trailing" constant="15" id="9IB-Vn-ces"/>
+                    <constraint firstItem="Pdf-hH-bBc" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="316" id="AY8-fJ-nzn"/>
+                    <constraint firstItem="jzi-Eu-FHZ" firstAttribute="leading" secondItem="3ym-8E-fIe" secondAttribute="trailing" constant="30" id="Auy-ho-8JW"/>
+                    <constraint firstItem="xOK-je-jpE" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="96" id="EzJ-bf-r5F"/>
+                    <constraint firstItem="0dw-P8-hBI" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="259" id="GjD-ff-UIa"/>
+                    <constraint firstItem="k3A-Aq-OEn" firstAttribute="leading" secondItem="Pdf-hH-bBc" secondAttribute="trailing" constant="14" id="Id6-dl-9P6"/>
+                    <constraint firstItem="Hbr-aL-5OY" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="96" id="JdO-Hr-WAw"/>
+                    <constraint firstItem="CUc-ht-Q1c" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="316" id="KGs-tr-IdI"/>
+                    <constraint firstItem="4Re-Dp-lzv" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="259" id="Lf4-hB-NMA"/>
+                    <constraint firstItem="CUc-ht-Q1c" firstAttribute="leading" secondItem="k3A-Aq-OEn" secondAttribute="trailing" constant="18" id="M2h-Zo-2HP"/>
+                    <constraint firstAttribute="centerX" secondItem="CUc-ht-Q1c" secondAttribute="centerX" id="MSm-t6-KUc"/>
+                    <constraint firstItem="O7Z-Lm-eRh" firstAttribute="leading" secondItem="pSc-QQ-bbC" secondAttribute="trailing" constant="15" id="MuC-kL-ki4"/>
+                    <constraint firstItem="sUy-tm-MwP" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="316" id="O6o-Dm-bpQ"/>
+                    <constraint firstAttribute="centerX" secondItem="3ym-8E-fIe" secondAttribute="centerX" id="OMs-ac-Q1P"/>
+                    <constraint firstItem="jzi-Eu-FHZ" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="9" id="PUQ-qc-arD"/>
+                    <constraint firstItem="4Re-Dp-lzv" firstAttribute="leading" secondItem="0dw-P8-hBI" secondAttribute="trailing" constant="15" id="QfG-iH-uf2"/>
+                    <constraint firstItem="k3A-Aq-OEn" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="316" id="SQ2-rq-AE1"/>
+                    <constraint firstItem="TkA-Kn-YWE" firstAttribute="leading" secondItem="GbT-ub-zyM" secondAttribute="trailing" constant="30" id="TR5-ol-eiH"/>
+                    <constraint firstAttribute="centerX" secondItem="4Re-Dp-lzv" secondAttribute="centerX" id="TSW-Gf-FBT"/>
+                    <constraint firstItem="3ym-8E-fIe" firstAttribute="leading" secondItem="sc0-m0-XB1" secondAttribute="trailing" constant="30" id="UFb-oZ-GD8"/>
+                    <constraint firstItem="sc0-m0-XB1" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="9" id="Vyw-lD-VOr"/>
+                    <constraint firstAttribute="centerX" secondItem="TkA-Kn-YWE" secondAttribute="centerX" id="WSn-Ly-934"/>
+                    <constraint firstAttribute="centerX" secondItem="Z2J-uZ-jCS" secondAttribute="centerX" id="Wr2-bq-YIE"/>
+                    <constraint firstItem="YjJ-is-3UJ" firstAttribute="leading" secondItem="CUc-ht-Q1c" secondAttribute="trailing" constant="20" id="a9z-0f-IZF"/>
+                    <constraint firstItem="Z2J-uZ-jCS" firstAttribute="leading" secondItem="Hbr-aL-5OY" secondAttribute="trailing" constant="30" id="cWP-1S-adr"/>
+                    <constraint firstItem="6pw-Aw-DCE" firstAttribute="leading" secondItem="TkA-Kn-YWE" secondAttribute="trailing" constant="30" id="d4T-JR-OWg"/>
+                    <constraint firstItem="6pw-Aw-DCE" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="180" id="dUp-zP-sCj"/>
+                    <constraint firstItem="TkA-Kn-YWE" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="180" id="e81-Uu-N8i"/>
+                    <constraint firstItem="GbT-ub-zyM" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="180" id="hBP-6B-TfR"/>
+                    <constraint firstItem="3ym-8E-fIe" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="9" id="mHM-SC-taJ"/>
+                    <constraint firstItem="O7Z-Lm-eRh" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="259" id="nH5-fE-rfc"/>
+                    <constraint firstItem="xOK-je-jpE" firstAttribute="leading" secondItem="Z2J-uZ-jCS" secondAttribute="trailing" constant="30" id="omU-a2-qgG"/>
+                    <constraint firstItem="pSc-QQ-bbC" firstAttribute="leading" secondItem="4Re-Dp-lzv" secondAttribute="trailing" constant="20" id="vyL-ki-l1v"/>
+                    <constraint firstItem="Z2J-uZ-jCS" firstAttribute="top" secondItem="y1r-eu-H6R" secondAttribute="top" constant="96" id="zlW-3i-uM8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="channel_addBut" destination="3ym-8E-fIe" id="HIs-Ki-VF6"/>
+                <outlet property="channel_minusBut" destination="TkA-Kn-YWE" id="jEi-zk-28M"/>
+                <outlet property="mailsBut" destination="sc0-m0-XB1" id="RUW-Sw-29t"/>
+                <outlet property="menuBut" destination="jzi-Eu-FHZ" id="4nQ-af-JXd"/>
+                <outlet property="tv0_but" destination="sUy-tm-MwP" id="2eM-tZ-peg"/>
+                <outlet property="tv1_but" destination="eIt-rv-jgB" id="4ZP-15-FnJ"/>
+                <outlet property="tv2_but" destination="0dw-P8-hBI" id="r1p-ac-Njd"/>
+                <outlet property="tv3_but" destination="4Re-Dp-lzv" id="dTm-k8-X8c"/>
+                <outlet property="tv4_but" destination="pSc-QQ-bbC" id="2cm-p7-IUG"/>
+                <outlet property="tv5_but" destination="O7Z-Lm-eRh" id="xuN-rj-JHB"/>
+                <outlet property="tv6_but" destination="Pdf-hH-bBc" id="ZLD-X3-PIr"/>
+                <outlet property="tv7_but" destination="k3A-Aq-OEn" id="qQR-Gg-val"/>
+                <outlet property="tv8_but" destination="CUc-ht-Q1c" id="Sx3-YI-feV"/>
+                <outlet property="tv9_but" destination="YjJ-is-3UJ" id="CFx-LO-AAK"/>
+                <outlet property="tv_Av_but" destination="GbT-ub-zyM" id="YNi-XU-rJq"/>
+                <outlet property="tv__But" destination="6pw-Aw-DCE" id="Kg7-oa-HCq"/>
+                <outlet property="vol_addBut" destination="xOK-je-jpE" id="h9k-3V-uNb"/>
+                <outlet property="vol_minusBut" destination="Hbr-aL-5OY" id="Hr6-dg-32K"/>
+                <outlet property="vol_muteBut" destination="Z2J-uZ-jCS" id="7oC-AM-Bi2"/>
+            </connections>
+            <point key="canvasLocation" x="513" y="328"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="button_air_power.png" width="154" height="154"/>
+        <image name="button_menu.png" width="154" height="154"/>
+        <image name="button_tv_avtv.png" width="154" height="154"/>
+        <image name="button_tv_ch_add.png" width="154" height="154"/>
+        <image name="button_tv_ch_reduction.png" width="154" height="154"/>
+        <image name="button_tv_mute.png" width="154" height="154"/>
+        <image name="button_tv_n0.png" width="90" height="90"/>
+        <image name="button_tv_n1.png" width="90" height="90"/>
+        <image name="button_tv_n2.png" width="90" height="90"/>
+        <image name="button_tv_n3.png" width="90" height="90"/>
+        <image name="button_tv_n4.png" width="90" height="90"/>
+        <image name="button_tv_n5.png" width="90" height="90"/>
+        <image name="button_tv_n6.png" width="90" height="90"/>
+        <image name="button_tv_n7.png" width="90" height="90"/>
+        <image name="button_tv_n8.png" width="90" height="90"/>
+        <image name="button_tv_n9.png" width="90" height="90"/>
+        <image name="button_tv_num.png" width="154" height="154"/>
+        <image name="button_tv_voice_big.png" width="154" height="154"/>
+        <image name="button_tv_voice_small.png" width="154" height="154"/>
+    </resources>
+</document>

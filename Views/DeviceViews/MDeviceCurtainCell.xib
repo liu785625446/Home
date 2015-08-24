@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="cGy-7u-bB9" customClass="MDeviceCurtainCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cGy-7u-bB9" id="FdH-oR-TKF">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9w-vW-lXd">
+                        <rect key="frame" x="120" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="xw9-7t-ATn"/>
+                            <constraint firstAttribute="width" constant="80" id="yqx-CW-fPa"/>
+                        </constraints>
+                        <state key="normal" image="button_x_cl_stop.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="curtainSwitchAction:" destination="cGy-7u-bB9" eventType="touchUpInside" id="xTZ-Xp-74J"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LN-gk-tgO">
+                        <rect key="frame" x="222" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="BGy-w5-35E"/>
+                            <constraint firstAttribute="height" constant="80" id="FxI-KI-Zwb"/>
+                        </constraints>
+                        <state key="normal" image="button_x_cl_close.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="curtainSwitchAction:" destination="cGy-7u-bB9" eventType="touchUpInside" id="0J1-x0-UkP"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLE-Hc-ieE">
+                        <rect key="frame" x="18" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="1co-N3-xLc"/>
+                            <constraint firstAttribute="height" constant="80" id="l9M-xG-rRv"/>
+                        </constraints>
+                        <state key="normal" image="button_x_cl_open.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="curtainSwitchAction:" destination="cGy-7u-bB9" eventType="touchUpInside" id="xn9-GW-idZ"/>
+                        </connections>
+                    </button>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_x_loading.png" translatesAutoresizingMaskIntoConstraints="NO" id="3cn-kI-ybP">
+                        <rect key="frame" x="18" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="09F-PC-BQp"/>
+                            <constraint firstAttribute="height" constant="80" id="Btp-eR-gdZ"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_x_loading.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sy7-OE-Obp">
+                        <rect key="frame" x="120" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="De7-Uw-Dqi"/>
+                            <constraint firstAttribute="height" constant="80" id="I9a-b8-Ur6"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_x_loading.png" translatesAutoresizingMaskIntoConstraints="NO" id="inA-YA-4tW">
+                        <rect key="frame" x="222" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="4xc-d8-tmh"/>
+                            <constraint firstAttribute="height" constant="80" id="v2T-ux-bV6"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="Sy7-OE-Obp" secondAttribute="centerY" id="1RP-DH-st5"/>
+                    <constraint firstAttribute="centerX" secondItem="F9w-vW-lXd" secondAttribute="centerX" id="3CH-qb-acw"/>
+                    <constraint firstAttribute="centerY" secondItem="7LN-gk-tgO" secondAttribute="centerY" id="4MH-I1-E0d"/>
+                    <constraint firstAttribute="centerY" secondItem="3cn-kI-ybP" secondAttribute="centerY" id="Dbr-vG-mOw"/>
+                    <constraint firstAttribute="centerY" secondItem="inA-YA-4tW" secondAttribute="centerY" id="Gc0-L8-0za"/>
+                    <constraint firstItem="7LN-gk-tgO" firstAttribute="leading" secondItem="F9w-vW-lXd" secondAttribute="trailing" constant="22" id="VnE-5n-E7n"/>
+                    <constraint firstItem="inA-YA-4tW" firstAttribute="leading" secondItem="Sy7-OE-Obp" secondAttribute="trailing" constant="22" id="c0k-1C-BYN"/>
+                    <constraint firstItem="F9w-vW-lXd" firstAttribute="leading" secondItem="JLE-Hc-ieE" secondAttribute="trailing" constant="22" id="f2u-e7-Iqf"/>
+                    <constraint firstAttribute="centerY" secondItem="F9w-vW-lXd" secondAttribute="centerY" id="gBe-wW-6sz"/>
+                    <constraint firstAttribute="centerY" secondItem="JLE-Hc-ieE" secondAttribute="centerY" id="jgU-f9-XvU"/>
+                    <constraint firstAttribute="centerX" secondItem="Sy7-OE-Obp" secondAttribute="centerX" id="yQM-YO-h2F"/>
+                    <constraint firstItem="Sy7-OE-Obp" firstAttribute="leading" secondItem="3cn-kI-ybP" secondAttribute="trailing" constant="22" id="zjH-zx-uvA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <connections>
+                <outlet property="c_closeBut" destination="7LN-gk-tgO" id="kqD-iP-HYV"/>
+                <outlet property="c_closeImg" destination="inA-YA-4tW" id="O0A-pr-9cY"/>
+                <outlet property="c_startBut" destination="JLE-Hc-ieE" id="D5l-eE-Fi6"/>
+                <outlet property="c_startImg" destination="3cn-kI-ybP" id="RYA-rg-rMD"/>
+                <outlet property="c_stopBut" destination="F9w-vW-lXd" id="yNe-LH-sRc"/>
+                <outlet property="c_stopImg" destination="Sy7-OE-Obp" id="1xu-xr-4eM"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="button_x_cl_close.png" width="80" height="80"/>
+        <image name="button_x_cl_open.png" width="80" height="80"/>
+        <image name="button_x_cl_stop.png" width="80" height="80"/>
+        <image name="button_x_loading.png" width="80" height="80"/>
+    </resources>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="Aam-A2-Vmh" customClass="MDeviceInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Aam-A2-Vmh" id="FWD-PN-iRT">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rSL-yc-yJc">
+                        <rect key="frame" x="17" y="11" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="aaM-XA-9y5"/>
+                            <constraint firstAttribute="width" constant="50" id="gYT-JA-Qai"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="吊灯" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7e-TT-r7N">
+                        <rect key="frame" x="75" y="17" width="34" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZ2-S1-rIx">
+                        <rect key="frame" x="75" y="39" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VZY-DA-t95">
+                        <rect key="frame" x="112" y="22" width="22" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="3sk-27-CsB"/>
+                            <constraint firstAttribute="width" constant="22" id="V3E-3x-sVc"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_grey_xiala.png" translatesAutoresizingMaskIntoConstraints="NO" id="te4-6P-Sxe">
+                        <rect key="frame" x="155" y="64" width="10" height="6"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="Z4j-MY-lkU"/>
+                            <constraint firstAttribute="height" constant="6" id="fPW-D2-fI6"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="i7e-TT-r7N" firstAttribute="top" secondItem="FWD-PN-iRT" secondAttribute="top" constant="17" id="6B4-je-EjY"/>
+                    <constraint firstAttribute="centerY" secondItem="rSL-yc-yJc" secondAttribute="centerY" id="DMW-1b-sAC"/>
+                    <constraint firstItem="rSL-yc-yJc" firstAttribute="leading" secondItem="FWD-PN-iRT" secondAttribute="leading" constant="17" id="Icp-Wa-qqV"/>
+                    <constraint firstItem="VZY-DA-t95" firstAttribute="top" secondItem="FWD-PN-iRT" secondAttribute="top" constant="22" id="KHP-2Z-6js"/>
+                    <constraint firstAttribute="centerX" secondItem="te4-6P-Sxe" secondAttribute="centerX" id="Onz-3g-PtR"/>
+                    <constraint firstAttribute="bottom" secondItem="te4-6P-Sxe" secondAttribute="bottom" constant="-1" id="WA9-Y5-dHN"/>
+                    <constraint firstAttribute="bottom" secondItem="FZ2-S1-rIx" secondAttribute="bottom" constant="12" id="bgp-f6-RdI"/>
+                    <constraint firstItem="VZY-DA-t95" firstAttribute="leading" secondItem="i7e-TT-r7N" secondAttribute="trailing" constant="3" id="hlL-lX-r4r"/>
+                    <constraint firstItem="FZ2-S1-rIx" firstAttribute="leading" secondItem="rSL-yc-yJc" secondAttribute="trailing" constant="8" id="wyS-bg-zRG"/>
+                    <constraint firstItem="i7e-TT-r7N" firstAttribute="leading" secondItem="rSL-yc-yJc" secondAttribute="trailing" constant="8" id="xsO-uH-F5D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deviceBatteryImg" destination="VZY-DA-t95" id="rZm-kI-ciI"/>
+                <outlet property="deviceImg" destination="rSL-yc-yJc" id="9OC-9G-hne"/>
+                <outlet property="deviceName" destination="i7e-TT-r7N" id="Iqp-DJ-yH6"/>
+                <outlet property="deviceStatus" destination="FZ2-S1-rIx" id="5zw-wN-W0p"/>
+                <outlet property="upImg" destination="te4-6P-Sxe" id="aqn-Tb-vRL"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_grey_xiala.png" width="20" height="12"/>
+    </resources>
+</document>

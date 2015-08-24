@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>格力</string>
+	<string>长虹</string>
+	<string>美的/东芝</string>
+	<string>HiSense海信</string>
+	<string>松下/乐声</string>
+	<string>日立</string>
+	<string>志高</string>
+	<string>三菱</string>
+	<string>扬子</string>
+	<string>科龙/华宝</string>
+	<string>奥克斯</string>
+	<string>海尔</string>
+	<string>富士通</string>
+	<string>夏普/声宝</string>
+	<string>惠尔浦</string>
+	<string>大金</string>
+	<string>LG</string>
+	<string>杂牌</string>
+	<string>华凌</string>
+	<string>TCL</string>
+	<string>格兰仕</string>
+	<string>三洋</string>
+	<string>NEC春兰</string>
+	<string>新科</string>
+	<string>澳柯玛</string>
+	<string>伊莱克斯</string>
+	<string>三星</string>
+	<string>乐华</string>
+	<string>开利</string>
+	<string>约克</string>
+	<string>麦克维尔</string>
+</array>
+</plist>

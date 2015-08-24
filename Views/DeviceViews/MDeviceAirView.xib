@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="AvA-Fv-lA1" customClass="MDeviceAirView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="airbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gph-qv-9C5">
+                    <rect key="frame" x="19" y="15" width="283" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="283" id="Sy3-0E-KvS"/>
+                        <constraint firstAttribute="height" constant="80" id="yHZ-yy-Pb7"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVB-TR-SeD">
+                    <rect key="frame" x="39" y="131" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="BHX-zT-RCu"/>
+                        <constraint firstAttribute="height" constant="60" id="D73-Kq-zL8"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="button_air_power.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="airRemoteAction:" destination="AvA-Fv-lA1" eventType="touchUpInside" id="RIJ-GS-obR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5n-ib-Un1">
+                    <rect key="frame" x="130" y="131" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Nij-mB-XmZ"/>
+                        <constraint firstAttribute="height" constant="60" id="i5t-sC-7VT"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="button_air_model.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="airRemoteAction:" destination="AvA-Fv-lA1" eventType="touchUpInside" id="ajE-NC-yK8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A12-Ab-d9a">
+                    <rect key="frame" x="130" y="215" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="PM5-Fe-hqb"/>
+                        <constraint firstAttribute="height" constant="60" id="rhr-xW-N62"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="button_air_model_wind.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="airRemoteAction:" destination="AvA-Fv-lA1" eventType="touchUpInside" id="eJb-IY-1pG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ige-vR-boq">
+                    <rect key="frame" x="222" y="131" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="0N3-vy-lKO"/>
+                        <constraint firstAttribute="height" constant="60" id="fQu-NH-bM7"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="button_air_temperature_big.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="airRemoteAction:" destination="AvA-Fv-lA1" eventType="touchUpInside" id="Xm8-Q1-0vz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNo-sW-gfC">
+                    <rect key="frame" x="222" y="215" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="jX0-Sj-Eyh"/>
+                        <constraint firstAttribute="height" constant="60" id="tQA-he-vBu"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="button_air_temperature_small.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="airRemoteAction:" destination="AvA-Fv-lA1" eventType="touchUpInside" id="cGf-is-SNo"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon_wind_auto.png" translatesAutoresizingMaskIntoConstraints="NO" id="bC0-kc-kXm">
+                    <rect key="frame" x="245" y="44" width="32" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="mRU-A3-hJM"/>
+                        <constraint firstAttribute="height" constant="22" id="mqV-G7-0eA"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="6.png" translatesAutoresizingMaskIntoConstraints="NO" id="ybi-13-2lH">
+                    <rect key="frame" x="152" y="28" width="35" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="i6j-Tc-nCe"/>
+                        <constraint firstAttribute="width" constant="35" id="sHW-PN-aUk"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qny-AZ-wtJ">
+                    <rect key="frame" x="116" y="28" width="35" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="hvj-EV-eNK"/>
+                        <constraint firstAttribute="height" constant="55" id="poe-zK-6RO"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="c.png" translatesAutoresizingMaskIntoConstraints="NO" id="6cQ-Gr-U6b">
+                    <rect key="frame" x="190" y="67" width="15" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="2r9-zj-w4y"/>
+                        <constraint firstAttribute="width" constant="15" id="Cfa-n1-C0j"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon_m_auto.png" translatesAutoresizingMaskIntoConstraints="NO" id="a7z-Dl-ZJm">
+                    <rect key="frame" x="39" y="32" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="cvg-xe-3TB"/>
+                        <constraint firstAttribute="height" constant="40" id="jbc-o6-Bfb"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFg-er-34x">
+                    <rect key="frame" x="39" y="215" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="LVk-aX-cFf"/>
+                        <constraint firstAttribute="height" constant="60" id="vFT-P3-hp7"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="button_air_model_sweepwind.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="airRemoteAction:" destination="AvA-Fv-lA1" eventType="touchUpInside" id="33m-zI-WIJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="自动" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbB-dF-nvz">
+                    <rect key="frame" x="31" y="71" width="57" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="57" id="k8K-sk-vZ9"/>
+                        <constraint firstAttribute="height" constant="15" id="ulO-85-PVQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon_wind.png" translatesAutoresizingMaskIntoConstraints="NO" id="jPe-d0-nlg">
+                    <rect key="frame" x="240" y="30" width="25" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="P1d-hz-Fvh"/>
+                        <constraint firstAttribute="height" constant="12" id="mFT-do-Ev0"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="扫风" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9C-68-iGk">
+                    <rect key="frame" x="267" y="29" width="24" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="8Fx-qb-zaG"/>
+                        <constraint firstAttribute="width" constant="24" id="S2B-Qs-Kra"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="自动风速" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bV-pY-E9A">
+                    <rect key="frame" x="240" y="67" width="51" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="B9h-dh-Cqf"/>
+                        <constraint firstAttribute="width" constant="51" id="Eam-Dq-NcS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Gph-qv-9C5" firstAttribute="top" secondItem="a9C-68-iGk" secondAttribute="bottom" constant="-26" id="7gE-Ty-oqW"/>
+                <constraint firstItem="u5n-ib-Un1" firstAttribute="top" secondItem="AvA-Fv-lA1" secondAttribute="top" constant="130" id="8zo-gd-x2i"/>
+                <constraint firstItem="Gph-qv-9C5" firstAttribute="top" secondItem="a7z-Dl-ZJm" secondAttribute="bottom" constant="-57" id="9VT-Tt-Lfc"/>
+                <constraint firstItem="6cQ-Gr-U6b" firstAttribute="top" secondItem="Gph-qv-9C5" secondAttribute="bottom" constant="-28" id="Aot-Wu-Rpa"/>
+                <constraint firstItem="XNo-sW-gfC" firstAttribute="leading" secondItem="A12-Ab-d9a" secondAttribute="trailing" constant="32" id="BeY-5e-3pQ"/>
+                <constraint firstItem="2bV-pY-E9A" firstAttribute="leading" secondItem="Gph-qv-9C5" secondAttribute="trailing" constant="-62" id="HfF-hx-lfd"/>
+                <constraint firstItem="FbB-dF-nvz" firstAttribute="top" secondItem="Gph-qv-9C5" secondAttribute="bottom" constant="-24" id="KhN-Bb-7ud"/>
+                <constraint firstItem="Gph-qv-9C5" firstAttribute="leading" secondItem="a7z-Dl-ZJm" secondAttribute="trailing" constant="-60" id="Kib-rd-Xws"/>
+                <constraint firstItem="ybi-13-2lH" firstAttribute="leading" secondItem="Gph-qv-9C5" secondAttribute="trailing" constant="-150" id="Luh-iY-hU6"/>
+                <constraint firstItem="2bV-pY-E9A" firstAttribute="top" secondItem="Gph-qv-9C5" secondAttribute="bottom" constant="-28" id="MQ6-Ut-Vib"/>
+                <constraint firstItem="Gph-qv-9C5" firstAttribute="leading" secondItem="Qny-AZ-wtJ" secondAttribute="trailing" constant="-132" id="RjE-EU-2We"/>
+                <constraint firstItem="XNo-sW-gfC" firstAttribute="top" secondItem="AvA-Fv-lA1" secondAttribute="top" constant="214" id="Rtm-HQ-j86"/>
+                <constraint firstAttribute="centerX" secondItem="Gph-qv-9C5" secondAttribute="centerX" id="UwJ-4v-njs"/>
+                <constraint firstItem="Gph-qv-9C5" firstAttribute="leading" secondItem="FbB-dF-nvz" secondAttribute="trailing" constant="-69" id="VGN-Sa-Hqf"/>
+                <constraint firstAttribute="centerX" secondItem="u5n-ib-Un1" secondAttribute="centerX" id="WRk-8O-yXP"/>
+                <constraint firstItem="Qny-AZ-wtJ" firstAttribute="top" secondItem="Gph-qv-9C5" secondAttribute="bottom" constant="-67" id="YaA-yZ-4Vp"/>
+                <constraint firstItem="FFg-er-34x" firstAttribute="top" secondItem="AvA-Fv-lA1" secondAttribute="top" constant="214" id="aLE-nN-5eL"/>
+                <constraint firstItem="ige-vR-boq" firstAttribute="top" secondItem="AvA-Fv-lA1" secondAttribute="top" constant="130" id="agc-en-4WV"/>
+                <constraint firstItem="KVB-TR-SeD" firstAttribute="top" secondItem="AvA-Fv-lA1" secondAttribute="top" constant="130" id="ax3-Ph-Npz"/>
+                <constraint firstAttribute="centerX" secondItem="A12-Ab-d9a" secondAttribute="centerX" id="clV-e7-FNb"/>
+                <constraint firstItem="ige-vR-boq" firstAttribute="leading" secondItem="u5n-ib-Un1" secondAttribute="trailing" constant="32" id="dD9-e1-v7h"/>
+                <constraint firstItem="6cQ-Gr-U6b" firstAttribute="leading" secondItem="Gph-qv-9C5" secondAttribute="trailing" constant="-112" id="e7K-AI-XAG"/>
+                <constraint firstItem="Gph-qv-9C5" firstAttribute="top" secondItem="bC0-kc-kXm" secondAttribute="bottom" constant="-51" id="fgz-ap-mKC"/>
+                <constraint firstItem="A12-Ab-d9a" firstAttribute="top" secondItem="AvA-Fv-lA1" secondAttribute="top" constant="214" id="flY-7g-iRB"/>
+                <constraint firstItem="Gph-qv-9C5" firstAttribute="top" secondItem="AvA-Fv-lA1" secondAttribute="top" constant="14" id="fsP-e5-xve"/>
+                <constraint firstItem="ybi-13-2lH" firstAttribute="top" secondItem="Gph-qv-9C5" secondAttribute="bottom" constant="-67" id="h0s-Eq-2K4"/>
+                <constraint firstItem="a9C-68-iGk" firstAttribute="leading" secondItem="Gph-qv-9C5" secondAttribute="trailing" constant="-35" id="h4X-uz-n51"/>
+                <constraint firstItem="bC0-kc-kXm" firstAttribute="leading" secondItem="Gph-qv-9C5" secondAttribute="trailing" constant="-57" id="iAZ-kd-jjH"/>
+                <constraint firstItem="Gph-qv-9C5" firstAttribute="top" secondItem="jPe-d0-nlg" secondAttribute="bottom" constant="-27" id="lw0-4n-rjz"/>
+                <constraint firstItem="A12-Ab-d9a" firstAttribute="leading" secondItem="FFg-er-34x" secondAttribute="trailing" constant="31" id="nm0-wq-zjY"/>
+                <constraint firstItem="jPe-d0-nlg" firstAttribute="leading" secondItem="Gph-qv-9C5" secondAttribute="trailing" constant="-62" id="y9z-fF-93h"/>
+                <constraint firstItem="u5n-ib-Un1" firstAttribute="leading" secondItem="KVB-TR-SeD" secondAttribute="trailing" constant="31" id="zYp-Ve-tuW"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="isWindAuto" destination="2bV-pY-E9A" id="sjp-OJ-3fw"/>
+                <outlet property="mailsBut" destination="KVB-TR-SeD" id="jsm-pc-Byy"/>
+                <outlet property="modeName" destination="FbB-dF-nvz" id="XLC-OJ-i22"/>
+                <outlet property="modelBut" destination="u5n-ib-Un1" id="7hG-Uh-Fcf"/>
+                <outlet property="modelImg" destination="a7z-Dl-ZJm" id="D0x-bd-OnD"/>
+                <outlet property="sweptBut" destination="FFg-er-34x" id="5GI-fI-hL9"/>
+                <outlet property="sweptImg" destination="jPe-d0-nlg" id="nqu-ph-mBw"/>
+                <outlet property="sweptName" destination="a9C-68-iGk" id="Juu-JG-w7w"/>
+                <outlet property="temperatureAddBut" destination="ige-vR-boq" id="XW9-Ne-Pmf"/>
+                <outlet property="temperatureBits" destination="ybi-13-2lH" id="xXe-iX-wOz"/>
+                <outlet property="temperatureCel" destination="6cQ-Gr-U6b" id="Z6Q-Xe-n9R"/>
+                <outlet property="temperatureMinusBut" destination="XNo-sW-gfC" id="Q6a-wG-gLs"/>
+                <outlet property="temperatureTen" destination="Qny-AZ-wtJ" id="Qc1-Hb-UvR"/>
+                <outlet property="windBut" destination="A12-Ab-d9a" id="PXX-Bu-Tqv"/>
+                <outlet property="windRating" destination="bC0-kc-kXm" id="JIG-BP-dhp"/>
+            </connections>
+            <point key="canvasLocation" x="485" y="845"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1.png" width="70" height="109"/>
+        <image name="6.png" width="70" height="109"/>
+        <image name="airbg.png" width="557" height="201"/>
+        <image name="button_air_model.png" width="154" height="154"/>
+        <image name="button_air_model_sweepwind.png" width="154" height="154"/>
+        <image name="button_air_model_wind.png" width="154" height="154"/>
+        <image name="button_air_power.png" width="154" height="154"/>
+        <image name="button_air_temperature_big.png" width="154" height="154"/>
+        <image name="button_air_temperature_small.png" width="154" height="154"/>
+        <image name="c.png" width="31" height="28"/>
+        <image name="icon_m_auto.png" width="90" height="90"/>
+        <image name="icon_wind.png" width="45" height="25"/>
+        <image name="icon_wind_auto.png" width="64" height="45"/>
+    </resources>
+</document>

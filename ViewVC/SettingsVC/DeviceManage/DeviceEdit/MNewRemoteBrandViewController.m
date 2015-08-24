@@ -1,0 +1,126 @@
+//
+//  MRemoteBrandViewController.m
+//  Home
+//
+//  Created by 刘军林 on 15/8/7.
+//  Copyright (c) 2015年 刘军林. All rights reserved.
+//
+
+#import "MNewRemoteBrandViewController.h"
+#import "MNewBrand.h"
+#import "FMDatabase.h"
+#import "MNewDeviceType.h"
+#import "MNewRemoteSearchViewController.h"
+
+@interface MNewRemoteBrandViewController ()
+
+@property (nonatomic, strong) NSMutableArray *brandList;
+
+@end
+
+@implementation MNewRemoteBrandViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    _brandList = [[NSMutableArray alloc] initWithCapacity:0];
+    [self.baseTableView setSeparatorInset:UIEdgeInsetsMake(0, 10, 0, 0)];
+    
+    self.title = [NSString stringWithFormat:@"选择%@品牌", _deviceType.name_ch];
+    
+    [self p_loadDatabaseBrand];
+    // Do any additional setup after loading the view.
+}
+
+-(void) p_loadDatabaseBrand
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSString *dbPath = [[NSBundle mainBundle] pathForResource:@"remote_data.db" ofType:nil];
+        FMDatabase *db = [FMDatabase databaseWithPath:dbPath];
+        
+        if (![db open]) {
+            NSLog(@"红外遥控信息数据库打开失败!");
+        }else {
+            NSLog(@"红外遥控数据库信息打开成功!");
+            
+            NSString *sql = [NSString stringWithFormat:@"select * from brand_list where control_type = %@", _deviceType.control_type];
+            FMResultSet *set = [db executeQuery:sql];
+            while ([set next]) {
+                MNewBrand *brand = [[MNewBrand alloc] init];
+                [_brandList addObject:[brand objectForSet:set]];
+            }
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.baseTableView reloadData];
+            });
+        }
+    });
+}
+
+#pragma mark -
+#pragma mark UICollectionViewController
+-(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 0.1f;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 0.1f;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50.f;
+}
+
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [_brandList count];
+}
+
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CELL" forIndexPath:indexPath];
+    cell.textLabel.font = [UIFont systemFontOfSize:15.f];
+    MNewBrand *brand = [_brandList objectAtIndex:indexPath.row];
+    cell.textLabel.text = brand.brand_ch;
+    return cell;
+}
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self performSegueWithIdentifier:@"MNewRemoteSearchIdentifier" sender:[_brandList objectAtIndex:indexPath.row]];
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"MNewRemoteSearchIdentifier"]) {
+        MNewRemoteSearchViewController *remoteSearch = segue.destinationViewController;
+        remoteSearch.deviceType = _deviceType;
+        remoteSearch.brand = sender;
+        remoteSearch.entityId = _entityId;
+    }
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end
